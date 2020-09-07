@@ -1,0 +1,18 @@
+.title-slide a{
+  color: #FFFFFF;
+}
+
+.title-slide a:hover{
+  color: #000;
+}
+
+.inverse p{
+  color: #FFFFFF;
+}
+
+.inverse a{
+  color: #760064;
+  font-weight: bold;
+}
+
+
