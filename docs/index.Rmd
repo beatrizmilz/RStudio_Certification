@@ -16,6 +16,12 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+<!-- inicio font awesome -->
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+<!-- final font awesome -->
+
+
+
 ### 1.  Learner persona 
 
 __General background:__ Maria is a PhD student in Social Sciences, and she was born and lives in São Paulo, Brasil. 
@@ -38,7 +44,7 @@ __Special considerations:__ Maria does not have access to a good internet connec
 knitr::include_graphics("img/concept_map.jpg")
 ```
 
-- Concept Map made with [CMap Tools](https://cmap.ihmc.us/) 
+- Concept Map made with [<i class="fas fa-external-link-alt"></i> CMap Tools](https://cmap.ihmc.us/) 
 
 ### 3.  Formative Assessment 
 
@@ -50,6 +56,8 @@ xaringanExtra::embed_xaringan(
 )
 ```
 
+<p style="text-align:right;">[<i class="fas fa-external-link-alt"></i> Open full page](https://beatriz-milz.shinyapps.io/formative_assessment/)</p>
+
 ### 4.  Slides 
 
 ```{r}
@@ -60,5 +68,5 @@ xaringanExtra::embed_xaringan(
 ```
 
 
-
+<p style="text-align:right;">[<i class="fas fa-external-link-alt"></i> Open full page](https://beatrizmilz.github.io/RStudio_Certification/slides.html)</p>
 

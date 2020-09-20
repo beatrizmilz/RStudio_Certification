@@ -16,7 +16,6 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-
 ```
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
@@ -26,9 +25,13 @@ style_duo_accent(
   secondary_color = "#409dad",
   inverse_header_color = "#FFFFFF"
 )
-
-xaringanExtra::use_panelset()
 ```
+
+
+```{r xaringanExtra-share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
 
 <!-- inicio font awesome -->
 <script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
