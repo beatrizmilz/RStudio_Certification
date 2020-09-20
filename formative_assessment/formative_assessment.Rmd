@@ -2,6 +2,7 @@
 title: "Formative Assessment"
 output: learnr::tutorial
 runtime: shiny_prerendered
+progressive: true
 ---
 
 ```{r setup, include=FALSE}
@@ -9,7 +10,7 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
+## Question 1
 ```{r q1}
 question("1) Which chunk options can be used to change the size of a figure?",
     answer("echo", message = "`echo` is used to set if the code that generates the figure should appear in the output."),
@@ -24,6 +25,7 @@ question("1) Which chunk options can be used to change the size of a figure?",
 
 ```
 
+## Question 2
 ```{r q2}
 question("2) You want to add a figure in a RMarkdown report, with the following properties: <Br>
          - Shold not apper the code that generated the figure; <br>
