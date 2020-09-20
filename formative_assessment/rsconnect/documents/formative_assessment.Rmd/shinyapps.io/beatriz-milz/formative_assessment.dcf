@@ -1,0 +1,12 @@
+name: formative_assessment
+title: formative_assessment
+username:
+account: beatriz-milz
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2848149
+bundleId: 3649712
+url: https://beatriz-milz.shinyapps.io/formative_assessment/
+when: 1600633770.21664
+asMultiple: FALSE
+asStatic: FALSE
