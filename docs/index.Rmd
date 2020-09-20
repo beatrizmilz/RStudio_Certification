@@ -2,7 +2,6 @@
 title: "Adding figures in R Markdown "
 description: |
   15’ class for the R-Studio Certification
-  - Under construction
 author:
   - name: Beatriz Milz
     url: https://beatrizmilz.com
