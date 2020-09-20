@@ -1,4 +1,4 @@
-.title-slide a, .title-slide h1, .title-slide h2, .title-slide h3{
+.title-slide a, .title-slide h1, .title-slide h2, .title-slide h3, .title-slide h4{
   color: #000000;
 }
 
@@ -20,4 +20,8 @@
   background-image: url(img/HexFabric.jpg);
     background-size: cover;
     background-color: #FFFFFF;
+}
+
+.title-slide h4{
+font-size: 0.8em;
 }

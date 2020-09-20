@@ -52,7 +52,7 @@ knitr::include_graphics("img/concept_map.jpg")
 ```{r}
 xaringanExtra::embed_xaringan(
   url = "https://beatriz-milz.shinyapps.io/formative_assessment/",
-  ratio = "16:9"
+  ratio = "3:2"
 )
 ```
 
