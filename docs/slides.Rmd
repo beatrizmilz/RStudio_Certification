@@ -98,7 +98,6 @@ class: inverse, middle, center
 - Function `include_graphics()` from the package `knitr` 
 
 .panelset[
-
 .panel[.panel-name[Complete URL]
 
 ```{r}
@@ -115,9 +114,8 @@ knitr::include_graphics("img/rmarkdown.png")
 
 ]
 
-
-
 ]
+
 
 
 ---
