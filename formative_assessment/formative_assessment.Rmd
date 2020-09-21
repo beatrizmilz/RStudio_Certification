@@ -12,16 +12,51 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Question 1
 ```{r q1}
+# Retirei essa questão, pois ao cortar o material, ela ficou muito simples
+# question(
+#   "1) Which of the following chunk options can be used to change the size of a figure?",
+#   answer("echo", message = "`echo` is used to set if the code that generates the figure should appear in the output."),
+#   answer("fig.align", message = "`fig.align` is used to set the alignment of the figure."),
+#   answer("out.width", correct = TRUE),
+#  # answer("dpi", message = "`dpi` is used to set the resolution of the figure."),
+#   answer("fig.cap", message = "`fig.cap` is used to write captions."),
+# #  answer("fig.width", correct = TRUE),
+#   allow_retry = TRUE,
+#   random_answer_order = TRUE
+# ) 
+
+
 question(
-  "1) Which of the following chunk options can be used to change the size of a figure?",
-  answer("echo", message = "`echo` is used to set if the code that generates the figure should appear in the output."),
-  answer("fig.align", message = "`fig.align` is used to set the alignment of the figure."),
-  answer("out.width", correct = TRUE),
- # answer("dpi", message = "`dpi` is used to set the resolution of the figure."),
-  answer("fig.cap", message = "`fig.cap` is used to write captions."),
-#  answer("fig.width", correct = TRUE),
+  "1) You want to add an image to an RMarkdown report, and be able to change the chunk options. Which of the following code could be used? ",
+  answer(
+    "`![description of image](url of the image)`",
+    correct = FALSE,
+    message = "- <i class='fas fa-exclamation'></i> `![description of image](url of the image)` - This code is used to add an image using Markdown code, which is not able to change the chunk options. Chunk options are available for R code, not Markdown. To add an image using R code, the funcion `knitr::include_graphics()` can be used"
+  ),
+  answer(
+    "`knitr::include_graphics('url of the image')`",
+    correct = TRUE,
+    message =  "- <i class='fas fa-check'></i> `knitr::include_graphics('url of the image')` - Congratulations! That is correct!"
+  ),
+  answer(
+    "`knitr::include_graphics(url of the image)`",
+    correct = FALSE,
+    "- <i class='fas fa-exclamation'></i> `knitr::include_graphics(url of the image)` - Almost right! Just remember to use quotation marks around the first argument of the function (the path or url of the image)."
+  ),
+  answer(
+    "`knitr::include_graphics('path to the image/')`",
+    correct = TRUE,
+    message =  "- <i class='fas fa-check'></i> `knitr::include_graphics('path to the image/')` - Congratulations! That is correct!"
+  ),
+  answer(
+    "`knitr::include_graphics(path to the image/)`",
+    correct = FALSE,
+    "- <i class='fas fa-exclamation'></i> `knitr::include_graphics(path to the image/)` - Almost right! Just remember to use quotation marks around the first argument of the function (the path or url of the image)."
+  ),
   allow_retry = TRUE,
-  random_answer_order = TRUE
+  random_answer_order = TRUE,
+  incorrect = "Incorrect. You should try again! Tip: There are two correct answers!",
+  correct = " <i class='fas fa-check'></i> Awesome! That is correct!"
 )
 ```
 
@@ -33,42 +68,45 @@ question(
          - The figure should appear in the center of the page; <br>
          - The figure should be the size of half of the page space. <br>
          Which chunk options would you use? Please choose the answer to fill the gaps: <br>
-         `{r, echo=_(I)_, _(II)_='center', _(III)_='50%'}`
+         `{r, echo=_(I)_, _(II)_='center', out.width=_(III)_}`
          ",
   
   answer(
-    "I) `FALSE`, II) `fig.align`, III) `out.width`",
-    correct = TRUE,
-    message = " <i class='fas fa-check'></i> Awesome! All the options were right!"
+    "I) `FALSE`, II) `fig.align`, III) `'50%'`",
+    correct = TRUE
   ),
   
   answer(
-    "I) `FALSE`, II) `fig.align`, III) `fig.width`",
+    "I) `FALSE`, II) `fig.align`, III) `50%`",
     correct = FALSE,
-    message = " I) <i class='fas fa-check'></i> `echo=FALSE` <br> II) <i class='fas fa-check'></i> ` fig.align='center'` <br> III) <i class='fas fa-exclamation'></i> To set the size of a figure relative to the size of the page, `out.width` can be used. `fig.width` can be used to set the size in inches."
+    message = " I) <i class='fas fa-check'></i> `echo=FALSE` <br> II) <i class='fas fa-check'></i> ` fig.align='center'` <br> III) <i class='fas fa-exclamation'></i> Almost right! Just remember to use quotation marks around the number and the symbol of percentage (example: `out.width='50%'`)."
   ),
   
   
   
   answer(
-    "I) `TRUE`, II) `fig.cap`, III) `dpi`",
+    "I) `TRUE`, II) `fig.cap`, III) `'50'`",
     correct = FALSE,
-    message = " I) <i class='fas fa-exclamation'></i> Using this chunk options, the code that generates the figure will show in your report. If `echo=FALSE` is used, the code won't show. <br> II) <i class='fas fa-exclamation'></i> `fig.cap` is used to set a caption for the figure. To set the alignment of the figure, `fig.align` can be used.<BR> III) <i class='fas fa-exclamation'></i> `dpi` is used to set the resolution of the image. To set the size of a figure relative to the size of the page, `out.width` can be used. <BR>"
+    message = " I) <i class='fas fa-exclamation'></i> Using this chunk options, the code that generates the figure will show in your report. If `echo=FALSE` is used, the code won't show. <br> II) <i class='fas fa-exclamation'></i> `fig.cap` is used to set a caption for the figure. To set the alignment of the figure, `fig.align` can be used.<BR> III) <i class='fas fa-exclamation'></i>  Almost right! Just remember to use the symbol of percentage (%) after the number (example: `out.width='50%'`). <BR>"
   ),
   
   
   answer(
-    "I) `TRUE`, II) `fig.align`, III) `out.width`",
+    "I) `TRUE`, II) `fig.align`, III) `'50%'`",
     correct = FALSE,
     message = " I) <i class='fas fa-exclamation'></i> Using this chunk options, the code that generates the figure will show in your report. If `echo=FALSE` is used, the code won't show. <br> II) <i class='fas fa-check'></i> ` fig.align='center'` <br> III) <i class='fas fa-check'></i> `out.width='50%'` "
   ),
   
   
   allow_retry = TRUE,
-  random_answer_order = TRUE
+  random_answer_order = TRUE,
+  correct = " <i class='fas fa-check'></i> Awesome! That is correct!",
+    incorrect = "Incorrect. Read the messages below to figure out which is the right answer, and try again."
 )
 ```
 
 <!-- inicio font awesome -->
 <script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
 <!-- final font awesome -->
+
+[<i class="fas fa-external-link-alt"></i> This questions are part of the '15’ class for the R-Studio Certification' developed by Beatriz Milz.](https://beatrizmilz.github.io/RStudio_Certification/) 
