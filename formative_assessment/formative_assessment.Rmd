@@ -12,44 +12,61 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Question 1
 ```{r q1}
-question("1) Which chunk options can be used to change the size of a figure?",
-    answer("echo", message = "`echo` is used to set if the code that generates the figure should appear in the output."),
-    answer("fig.align", message = "`fig.align` is used to set the alignment of the figure."),
-    answer("out.width", correct = TRUE),
-    answer("dpi", message = "`dpi` is used to set the resolution of the figure."),
-    answer("fig.cap", message = "`fig.cap` is used to write captions."),
-    answer("fig.width", correct = TRUE),
-    allow_retry = TRUE,
-    random_answer_order = TRUE
-  )
-
+question(
+  "1) Which chunk options can be used to change the size of a figure?",
+  answer("echo", message = "`echo` is used to set if the code that generates the figure should appear in the output."),
+  answer("fig.align", message = "`fig.align` is used to set the alignment of the figure."),
+  answer("out.width", correct = TRUE),
+ # answer("dpi", message = "`dpi` is used to set the resolution of the figure."),
+  answer("fig.cap", message = "`fig.cap` is used to write captions."),
+#  answer("fig.width", correct = TRUE),
+  allow_retry = TRUE,
+  random_answer_order = TRUE
+)
 ```
 
 ## Question 2
 ```{r q2}
-question("2) You want to add a figure in a RMarkdown report, with the following properties: <Br>
+question(
+  "2) You want to add a figure in a RMarkdown report, with the following properties: <Br>
          - Shold not apper the code that generated the figure; <br>
          - The figure should appear in the center of the page; <br>
          - The figure should be the size of half of the page space. <br>
          Which chunk options would you use? Please choose the answer to fill the gaps: <br>
          `{r, echo=_(I)_, _(II)_='center', _(III)_='50%'}`
          ",
-         
-    answer("I) `FALSE`, II) `fig.align`, III) `out.width`", correct = TRUE, message = "> <i class='fas fa-check'></i> Awesome! All the options were right!"),     
-    
-    answer("I) `FALSE`, II) `fig.align`, III) `fig.width`", correct = FALSE, message = "> I) <i class='fas fa-check'></i> `echo=FALSE` <br> II) <i class='fas fa-check'></i> ` fig.align='center'` <br> III) <i class='fas fa-exclamation'></i> To set the size of a figure relative to the size of the page, `out.width` can be used. `fig.width` can be used to set the size in inches."),        
- 
-    
-    
-    answer("I) `TRUE`, II) `fig.cap`, III) `dpi`", correct = FALSE, message = "> I) <i class='fas fa-exclamation'></i> Using this chunk options, the code that generates the figure will show in your report. If `echo=FALSE` is used, the code won't show. <br> II) <i class='fas fa-exclamation'></i> `fig.cap` is used to set a caption for the figure. To set the alignment of the figure, `fig.align` can be used.<BR> III) <i class='fas fa-exclamation'></i> `dpi` is used to set the resolution of the image. To set the size of a figure relative to the size of the page, `out.width` can be used. <BR>"),    
-   
-    
-     answer("I) `TRUE`, II) `fig.align`, III) `out.width`", correct = FALSE, message = "> I) <i class='fas fa-exclamation'></i> Using this chunk options, the code that generates the figure will show in your report. If `echo=FALSE` is used, the code won't show. <br> II) <i class='fas fa-check'></i> ` fig.align='center'` <br> III) <i class='fas fa-check'></i> `out.width='50%'` "),     
-    
-    
-    allow_retry = TRUE,
-    random_answer_order = TRUE
-  )
+  
+  answer(
+    "I) `FALSE`, II) `fig.align`, III) `out.width`",
+    correct = TRUE,
+    message = " <i class='fas fa-check'></i> Awesome! All the options were right!"
+  ),
+  
+  answer(
+    "I) `FALSE`, II) `fig.align`, III) `fig.width`",
+    correct = FALSE,
+    message = " I) <i class='fas fa-check'></i> `echo=FALSE` <br> II) <i class='fas fa-check'></i> ` fig.align='center'` <br> III) <i class='fas fa-exclamation'></i> To set the size of a figure relative to the size of the page, `out.width` can be used. `fig.width` can be used to set the size in inches."
+  ),
+  
+  
+  
+  answer(
+    "I) `TRUE`, II) `fig.cap`, III) `dpi`",
+    correct = FALSE,
+    message = " I) <i class='fas fa-exclamation'></i> Using this chunk options, the code that generates the figure will show in your report. If `echo=FALSE` is used, the code won't show. <br> II) <i class='fas fa-exclamation'></i> `fig.cap` is used to set a caption for the figure. To set the alignment of the figure, `fig.align` can be used.<BR> III) <i class='fas fa-exclamation'></i> `dpi` is used to set the resolution of the image. To set the size of a figure relative to the size of the page, `out.width` can be used. <BR>"
+  ),
+  
+  
+  answer(
+    "I) `TRUE`, II) `fig.align`, III) `out.width`",
+    correct = FALSE,
+    message = " I) <i class='fas fa-exclamation'></i> Using this chunk options, the code that generates the figure will show in your report. If `echo=FALSE` is used, the code won't show. <br> II) <i class='fas fa-check'></i> ` fig.align='center'` <br> III) <i class='fas fa-check'></i> `out.width='50%'` "
+  ),
+  
+  
+  allow_retry = TRUE,
+  random_answer_order = TRUE
+)
 ```
 
 <!-- inicio font awesome -->
