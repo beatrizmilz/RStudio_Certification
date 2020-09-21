@@ -34,7 +34,7 @@ meta() %>%
     image_alt = paste(
       "First slide of",
       "Presentation about 'Adding figures in R Markdown'",
-      "15’ class for the R-Studio Certification" ,
+      "15’ class for the R-Studio Certification." ,
       "Created by Beatriz Milz"
     ),
     og_type = "website",
