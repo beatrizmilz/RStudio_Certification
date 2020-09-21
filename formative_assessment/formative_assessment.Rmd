@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Question 1
 ```{r q1}
 question(
-  "1) Which chunk options can be used to change the size of a figure?",
+  "1) Which of the following chunk options can be used to change the size of a figure?",
   answer("echo", message = "`echo` is used to set if the code that generates the figure should appear in the output."),
   answer("fig.align", message = "`fig.align` is used to set the alignment of the figure."),
   answer("out.width", correct = TRUE),
