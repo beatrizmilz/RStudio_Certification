@@ -12,6 +12,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+#      ratio: 191:100
 ---
 class: center, middle
 
@@ -40,6 +41,32 @@ xaringanExtra::use_panelset()
 xaringanExtra::use_share_again()
 ```
 
+
+```{r metathis, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_name("github-repo" = "beatrizmilz/RStudio_Certification") %>% 
+  meta_social(
+    title = "Adding figures in R Markdown",
+    description = paste(
+      "Presentation about 'Adding figures in R Markdown'",
+      "15’ class for the R-Studio Certification" ,
+      "Created by Beatriz Milz"
+    ),
+    url = "https://beatrizmilz.github.io/RStudio_Certification/slides.html",
+    image = "https://beatrizmilz.github.io/RStudio_Certification/img/share-card.png",
+    image_alt = paste(
+      "First slide of",
+      "Presentation about 'Adding figures in R Markdown'",
+      "15’ class for the R-Studio Certification" ,
+      "Created by Beatriz Milz"
+    ),
+    og_type = "website",
+    og_author = "Beatriz Milz",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@beamilz"
+  )
+```
 
 <!-- inicio font awesome -->
 <script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
@@ -277,7 +304,7 @@ class: inverse, middle, center
 
 ## Thank you!
 
-Slides made with the R packages [xaringan](https://github.com/yihui/xaringan), [xaringanthemer](https://github.com/gadenbuie/xaringanthemer) and [xaringanExtra](https://github.com/gadenbuie/xaringanExtra).
+Slides made with the R packages [xaringan](https://github.com/yihui/xaringan), [xaringanthemer](https://github.com/gadenbuie/xaringanthemer), [metathis](https://pkg.garrickadenbuie.com/metathis/) and [xaringanExtra](https://github.com/gadenbuie/xaringanExtra).
 
 
 Hex-sticker wall as background image made by [Amelia McNamara](https://www.amelia.mn/blog/misc/2019/08/17/Tidy-Dress.html).
