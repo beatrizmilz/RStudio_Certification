@@ -26,7 +26,6 @@ meta() %>%
   meta_social(
     title = "Adding figures in R Markdown",
     description = paste(
-      "Presentation about 'Adding figures in R Markdown'",
       "15’ class for the R-Studio Certification" ,
       "Created by Beatriz Milz"
     ),
