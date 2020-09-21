@@ -20,32 +20,53 @@ knitr::opts_chunk$set(echo = FALSE)
 <!-- final font awesome -->
 
 
+## About the class
 
-### 1.  Learner persona 
+This class is part of a discipline at the university that teaches R for social sciences graduate students.
+In this discipline, the teacher already taught how to import data to R, how to manipulate data, create simple graphs, and the current content is how to make reproducible reports.  
+In the last class, the teacher made an introduction about how to do the analysis in a reproducible way using R Markdown.
+In this class, the students will learn how to add figures in the reports.
+
+## 1.  Learner persona 
+
+### A) Maria
 
 __General background:__ Maria is a PhD student in Social Sciences, and she was born and lives in São Paulo, Brasil. 
 She enjoys spending time with her family and her dog called Zeus.
 
-__Relevant experience:__ This is her first experience with R: Maria has been learning R at the university, in a discipline that teaches R for social sciences researchers.
+__Relevant experience:__ This is her first experience with R.
 In the undergrad and masters course, all her analysis were made using Excel.
-In this discipline, the teacher already taught how to import data to R, how to manipulate data, create simple graphs, and the current content is how to make reproducible reports.  
 
-__Their perceived needs:__ In the last week, she had the first class using R Markdown, and the teacher showed that she could do all the analysis in a reproducible way. She think this could be interesting to use in her research.
+
+__Perceived needs:__  She thinks that learning R Markdown could be helpfull to apply in her research.
 She wants to make reports for the analysis of her research, that could be updated when new data is available. 
 
 __Special considerations:__ Maria does not have access to a good internet connection in her house, and sometimes she can't watch the live online classes.
 
 
+<!-- ### B) _____ -->
 
-### 2.  Concept map
+<!-- __General background:__  -->
+
+<!-- __Relevant experience:__  -->
+
+<!-- __Perceived needs:__   -->
+
+<!-- __Special considerations:__  -->
+
+
+
+## 2.  Concept map
 
 ```{r}
-knitr::include_graphics("img/concept_map.jpg")
+knitr::include_graphics("img/concept_map2.png")
 ```
+
+- [<i class="fas fa-external-link-alt"></i> View the image](img/concept_map2.png) 
 
 - Concept Map made with [<i class="fas fa-external-link-alt"></i> CMap Tools](https://cmap.ihmc.us/) 
 
-### 3.  Formative Assessment 
+## 3.  Formative Assessment 
 
 
 ```{r}
@@ -57,7 +78,7 @@ xaringanExtra::embed_xaringan(
 
 <p style="text-align:right;">[<i class="fas fa-external-link-alt"></i> Open full page](https://beatriz-milz.shinyapps.io/formative_assessment/)</p>
 
-### 4.  Slides 
+## 4.  Slides 
 
 ```{r}
 xaringanExtra::embed_xaringan(
