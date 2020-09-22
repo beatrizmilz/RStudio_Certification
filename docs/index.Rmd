@@ -46,7 +46,7 @@ meta() %>%
 
 ## About the class
 
-This class is part of a discipline at the university that teaches R for social sciences graduate students.
+This class is part of a discipline at the university that teaches R for environmental sciences graduate students.
 In this discipline, the teacher already taught how to import data to R, how to manipulate data, create simple graphs, and the current content is how to make reproducible reports.  
 In the last class, the teacher made an introduction about how to do the analysis in a reproducible way using R Markdown.
 In this class, the students will learn how to add figures in the reports.
@@ -55,7 +55,7 @@ In this class, the students will learn how to add figures in the reports.
 
 ### A) Maria
 
-__General background:__ Maria is a PhD student in Social Sciences, and she was born and lives in São Paulo, Brasil. 
+__General background:__ Maria is a PhD student in Environmental Sciences, and she was born and lives in São Paulo, Brasil. 
 She enjoys spending time with her family and her dog called Zeus.
 
 __Relevant experience:__ This is her first experience with R.

@@ -7,6 +7,8 @@ progressive: true
 
 ```{r setup, include=FALSE}
 library(learnr)
+library(praise)
+
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
@@ -27,36 +29,36 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 question(
-  "1) You want to add an image to an RMarkdown report, and be able to change the chunk options. Which of the following code could be used? ",
+  "1) You want to add an image to your report about the water crisis. The image is saved in your computer, in the same directory of your RProj and R Markdown report, and its name is `drought.jpg`, and also available online, in this url: `https://i.imgur.com/OGx1Rod.jpg`. <br><br><center><img src='https://i.imgur.com/OGx1Rod.jpg' width='200'/></center><br>You want to add the image and be able to change the properties with chunk options. Which of the following code could be used? Please select all the possible answers: ",
   answer(
-    "`![description of image](url of the image)`",
+    "`![description of image](drought.jpg)`",
     correct = FALSE,
     message = "- <i class='fas fa-exclamation'></i> `![description of image](url of the image)` - This code is used to add an image using Markdown code, which is not able to change the chunk options. Chunk options are available for R code, not Markdown. To add an image using R code, the funcion `knitr::include_graphics()` can be used"
   ),
   answer(
-    "`knitr::include_graphics('url of the image')`",
+    "`knitr::include_graphics('https://i.imgur.com/OGx1Rod.jpg')`",
     correct = TRUE,
     message =  "- <i class='fas fa-check'></i> `knitr::include_graphics('url of the image')` - Congratulations! That is correct!"
   ),
   answer(
-    "`knitr::include_graphics(url of the image)`",
+    "`knitr::include_graphics(https://i.imgur.com/OGx1Rod.jpg)`",
     correct = FALSE,
     "- <i class='fas fa-exclamation'></i> `knitr::include_graphics(url of the image)` - Almost right! Just remember to use quotation marks around the first argument of the function (the path or url of the image)."
   ),
   answer(
-    "`knitr::include_graphics('path to the image/')`",
+    "`knitr::include_graphics('drought.jpg')`",
     correct = TRUE,
-    message =  "- <i class='fas fa-check'></i> `knitr::include_graphics('path to the image/')` - Congratulations! That is correct!"
+    message =  "- <i class='fas fa-check'></i> `knitr::include_graphics('path to the image')` - Congratulations! That is correct!"
   ),
   answer(
-    "`knitr::include_graphics(path to the image/)`",
+    "`knitr::include_graphics(drought.jpg)`",
     correct = FALSE,
-    "- <i class='fas fa-exclamation'></i> `knitr::include_graphics(path to the image/)` - Almost right! Just remember to use quotation marks around the first argument of the function (the path or url of the image)."
+    "- <i class='fas fa-exclamation'></i> `knitr::include_graphics(path to the image)` - Almost right! Just remember to use quotation marks around the first argument of the function (the path or url of the image)."
   ),
   allow_retry = TRUE,
   random_answer_order = TRUE,
   incorrect = "Incorrect. You should try again! Tip: There are two correct answers!",
-  correct = " <i class='fas fa-check'></i> Awesome! That is correct!"
+  correct = paste(" <i class='fas fa-check'></i> Awesome! That is correct!", praise())
 )
 ```
 
@@ -100,7 +102,7 @@ question(
   
   allow_retry = TRUE,
   random_answer_order = TRUE,
-  correct = " <i class='fas fa-check'></i> Awesome! That is correct!",
+  correct = paste(" <i class='fas fa-check'></i> Awesome! That is correct!", praise()),
     incorrect = "Incorrect. Read the messages below to figure out which is the right answer, and try again."
 )
 ```
