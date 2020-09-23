@@ -51,6 +51,8 @@ In this discipline, the teacher already taught how to import data to R, how to m
 In the last class, the teacher made an introduction about how to do the analysis in a reproducible way using R Markdown.
 In this class, the students will learn how to add figures in the reports.
 
+
+
 ## 1.  Learner persona 
 
 ### A) Maria
@@ -66,17 +68,6 @@ __Perceived needs:__  She thinks that learning R Markdown could be helpfull to a
 She wants to make reports for the analysis of her research, that could be updated when new data is available. 
 
 __Special considerations:__ Maria does not have access to a good internet connection in her house, and sometimes she can't watch the live online classes.
-
-
-<!-- ### B) _____ -->
-
-<!-- __General background:__  -->
-
-<!-- __Relevant experience:__  -->
-
-<!-- __Perceived needs:__   -->
-
-<!-- __Special considerations:__  -->
 
 
 
@@ -114,3 +105,4 @@ xaringanExtra::embed_xaringan(
 
 <p style="text-align:right;">[<i class="fas fa-external-link-alt"></i> Open full page](https://beatrizmilz.github.io/RStudio_Certification/slides.html)</p>
 
+- File used in the demonstration: [<i class="fas fa-external-link-alt"></i> `demo.Rmd`](https://beatrizmilz.github.io/RStudio_Certification/demo.Rmd) 
