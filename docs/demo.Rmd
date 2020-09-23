@@ -1,0 +1,81 @@
+---
+title: "Adding figures in R Markdown"
+subtitle: "With knitr"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load knitr
+
+
+
+
+## Adding figures
+
+
+- Complete URL:
+
+Ex: https://d33wubrfki0l68.cloudfront.net/eb48bae40b24285c0c8f281e6d2a7500cf3b9fc8/a2e5f/knitr/images/knit-logo.png
+
+
+
+
+
+
+- Image saved in your project:
+
+Tip: use tab to help navigate in the files!
+
+
+
+
+
+
+## Chunk options
+
+### Output
+
+- Don't show  the code:
+
+
+
+
+
+
+- Show  the code:
+
+
+
+
+
+
+### Align
+
+- Example: image aligned in the center of the page
+
+
+
+
+
+
+### Size
+
+- Relative size:
+
+
+
+
+- Absolute size:
+
+
+
+
+### Caption
+
+
+
+
+
